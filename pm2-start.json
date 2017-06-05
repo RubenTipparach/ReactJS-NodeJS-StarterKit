@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "name": "DOTSC-Node-Server",
+            "cwd": "./DOTSC-Node-Server/",
+            "script": "server.js",
+            "args": ""
+        },
+	{
+	  "name": "DOTSC-UI-Static",
+	  "script": "serve",
+	  "env": {
+	    "PM2_SERVE_PATH": "./DOTSC-React-UI/build/",
+	    "PM2_SERVE_PORT": 5000
+	  }
+	}
+    ]
+}
