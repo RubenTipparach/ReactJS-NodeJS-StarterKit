@@ -1,6 +1,5 @@
-# GRIT - Geographic Roadway Inventory Tool
-WARNING: Cloned from git, will make modifications for this soon!
-This is a Javascript full stack application prototyped to replace the existing Asset Management tool. GRIT manages roadway conditions on top of Google Maps, and allows for advanced visualization of complex data used in describing roadway conditions.
+# DOTSC-NodeJS-StarterKit
+WARNING: Cloned from GRIT, will make modifications for this soon!
 
 ## Components
 - MS Sql Server
