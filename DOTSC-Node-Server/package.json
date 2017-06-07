@@ -8,9 +8,10 @@
   },
   "author": "Ruben",
   "license": "ISC",
-
   "dependencies": {
+    "body-parser": "^1.17.2",
     "colors": "^1.1.2",
+    "cors": "^2.8.3",
     "express": "^4.15.3",
     "mssql": "^3.3.0",
     "socket.io": "^1.7.4",
