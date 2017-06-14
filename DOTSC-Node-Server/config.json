@@ -1,0 +1,9 @@
+{
+	"port_number": 3001,
+	"sqlConn": {
+		"user": "admin", 
+		"password": "xx", 
+		"server": "localhost", 
+		"database": "whatever"
+	}
+}

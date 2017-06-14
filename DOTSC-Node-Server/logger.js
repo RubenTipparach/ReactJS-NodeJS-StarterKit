@@ -20,7 +20,7 @@ colors.setTheme(customTheme.colors);
 
 var fs = require('fs');
 
-var dir = './Logs';
+var dir = './logs';
 
 if (!fs.existsSync(dir)){
     fs.mkdirSync(dir);
@@ -29,11 +29,11 @@ if (!fs.existsSync(dir)){
 var awesomeLogger = new (winston.Logger)({
     transports: [
         new (winston.transports.Console)({ colorize: true, prettyPrint: true }),
-        new winston.transports.File({ filename: './Logs/all-logs.json' })
+        new winston.transports.File({ filename: './logs/all-logs.json' })
     ],
     exceptionHandlers: [
         new (winston.transports.Console)({ colorize: true, prettyPrint: true }),
-        new winston.transports.File({ filename: './Logs/exceptions.json' })
+        new winston.transports.File({ filename: './logs/exceptions.json' })
     ],
     
     levels: customTheme.levels

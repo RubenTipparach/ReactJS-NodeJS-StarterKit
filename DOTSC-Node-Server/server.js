@@ -14,12 +14,14 @@ var strFormat = require('string-format');
 var sql = require('mssql');
 
 var logger = require('./logger.js');
-var sqlServer = require('./SqlServer/sqlserver.js');
-var sqlConn = new sqlServer();
-
-var config = require('./main-server-conf.json');
+var sqlServer = require('./sqllib/sqlserver.js');
+var config = require('./config.json');
 
 
+
+console.log(config.sqlConn);
+
+//var sqlConn = new sqlServer(config.sqlConn);
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))

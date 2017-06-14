@@ -1,6 +1,5 @@
 var logger = require('./../logger.js');
 var sql = require('mssql');
-var config = require('./serverConfig.json');
 
 /**
  * This is the Sql Srever connection class.
@@ -11,8 +10,9 @@ module.exports = class SqlServerConn
 {
 
     // config for your database
-    constructor()
+    constructor(conifg)
     {
+		this.config = config;
     }
 
     /**
@@ -26,7 +26,7 @@ module.exports = class SqlServerConn
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "X-Requested-With");
 
-        let connection = new sql.Connection(config);
+        let connection = new sql.Connection(this.config);
 
         logger.info('Sql connection started...');
 
@@ -43,7 +43,7 @@ module.exports = class SqlServerConn
      */
     SqlRequiredInternal(delegate) {
 
-        let connection = new sql.Connection(config);
+        let connection = new sql.Connection(this.config);
 
         logger.info('Sql connection started...');
 

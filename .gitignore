@@ -1,4 +1,5 @@
 DOTSC-Node-Server/node_modules/
+DOTSC-Node-Server/logs/
 DOTSC-React-UI/semantic/src/
 DOTSC-React-UI/semantic/tasks/
 serverConfig.json
