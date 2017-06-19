@@ -17,7 +17,7 @@ var logger = require('./logger.js');
 var sqlServer = require('./sqllib/sqlserver.js');
 var config = require('./config.json');
 
-
+logger.level = 'error';
 
 console.log(config.sqlConn);
 
