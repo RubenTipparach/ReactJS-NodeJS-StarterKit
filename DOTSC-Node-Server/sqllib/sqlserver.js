@@ -145,12 +145,13 @@ module.exports = class SqlServerConn
      * @param {any} params
      * @param {any} callback
      */
-    SqlSelectParamCall(query, params, callback) {
+    SqlSelectParamCall(query, params, callback, multiple = false) {
         this.SqlRequiredInternal(
             (connection) => {
 
                 let request = new sql.Request(connection);
-
+		request.multiple = multiple;
+		    
                 for (var i in params) {
                     // I disagree with this and thing that the type should go after value!
                     request.input(params[i].param,
