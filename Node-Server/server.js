@@ -33,7 +33,7 @@ server.listen(config.port_number, () => {
 });
 
 
-app.post('/comms', (req, res) =>
+app.post('/api/comms', (req, res) =>
 {	
 	//console.log(req.raw);
 	//console.log(req.body);

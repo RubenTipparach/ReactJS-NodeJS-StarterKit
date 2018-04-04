@@ -3,3 +3,6 @@ Node-Server/logs/
 React-App/semantic/src/
 React-App/semantic/tasks/
 serverConfig.json
+.vs/
+asp-server/bin/
+asp-server/obj/

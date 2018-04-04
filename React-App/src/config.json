@@ -1,0 +1,8 @@
+{
+  "devEnv": true,
+  "prodEnv": false,
+  "refreshTokenTime": 60000,
+  "serverUrl": "http://localhost:60455",
+  "clientHomeUrl": "http://localhost:3000",
+  "version": "2018-04-04-StarterKit"
+}

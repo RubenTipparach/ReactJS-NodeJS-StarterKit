@@ -7,6 +7,7 @@ WARNING: Cloned from GRIT, will make modifications for this soon!
 - React Js
 - Semantic-React UI
 - React Router
+- ASP .Net (optional)
 
 ## Packages Used
 - express
@@ -15,7 +16,8 @@ WARNING: Cloned from GRIT, will make modifications for this soon!
 - winston
 - react
 - react-dom
-- axios
+- ~~axios~~
+- jquery
 - semanitc-ui-react
 - react-transition-group
 - semantic-ui-css
