@@ -8,9 +8,9 @@ using NLog;
 
 namespace asp_server.Utiliities
 {
-    class DatabaseLibrary
-{
-    private static Logger Logger = LogManager.GetCurrentClassLogger();
+    public class DatabaseLibrary
+    {
+        private static Logger Logger = LogManager.GetCurrentClassLogger();
         private static string env = ConfigurationManager.AppSettings["ServerEnvironment"];
         private static string conStrSel = env + "SqlConnection";
         private static string ConnectionString = ConfigurationManager.ConnectionStrings[conStrSel].ConnectionString;
