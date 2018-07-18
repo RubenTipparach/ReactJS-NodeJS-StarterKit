@@ -10,7 +10,7 @@ module.exports = class SqlServerConn
 {
 
     // config for your database
-    constructor(conifg)
+    constructor(config)
     {
 		this.config = config;
     }
